@@ -1,14 +1,18 @@
 {
+  "homepage": "https://bablu1921.github.io/Attendance-mgmt",
   "name": "attendance-mgmt",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sweetalert2": "^11.6.16",

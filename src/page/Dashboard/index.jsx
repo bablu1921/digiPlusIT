@@ -6,7 +6,6 @@ import List from './List';
 import Add from './Add';
 import Edit from './Edit';
 
-import { studentsData } from '../../Data';
 import { useEffect } from 'react';
 
 function Dashboard() {
@@ -101,6 +100,7 @@ function Dashboard() {
                     setIsEditing={setIsEditing}
                 />
             )}
+            <h1>haha</h1>
         </div>
     )
 }
