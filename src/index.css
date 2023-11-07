@@ -14,19 +14,7 @@ main {
 }
 
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
 
 
 pre {
@@ -36,48 +24,9 @@ pre {
   /* 2 */
 }
 
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
 
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
 
 /**
  * Add the correct font size in all browsers.
@@ -1078,14 +1027,14 @@ td {
   padding: 0.5rem;
 }
 
-caption {
-  padding: 1rem 0;
-  caption-side: bottom;
-  color: #ababab;
-}
+
 
 .striped-table tbody tr:nth-child(odd) {
-  background-color: #f8f8f8;
+  background-color: #92afde;
+}
+
+.striped-table tbody tr:nth-child(even) {
+  background-color: #adbed9;
 }
 
 .contain-table {

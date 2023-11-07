@@ -11,14 +11,12 @@ function List({ students, handleEdit, handleDelete }) {
     return (
         <div className='contain-table'>
             <table className='striped-table'>
-                <thead>
+                <thead className='thead'>
                     <tr>
-                        <th>No.</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Roll</th>
-                        <th>CheckIn</th>
-                        <th>CheckOut</th>
+                        <th>Row Num</th>
+                        <th> Name</th>
+                        <th>Location</th>
+                        <th>CGPA</th>
                         <th colSpan={2} className="text-center">
                             Actions
                         </th>
@@ -30,10 +28,10 @@ function List({ students, handleEdit, handleDelete }) {
                             <tr key={student.id}>
                                 <td>{i + 1}</td>
                                 <td>{student.firstName}</td>
-                                <td>{student.lastName}</td>
-                                <td>{student.roll}</td>
-                                <td>{student.checkIn}</td>
-                                <td>{student.checkOut} </td>
+                                <td>{student.location}</td>
+                                <td>{student.cgpa}</td>
+                                {/* <td>{student.checkIn}</td> */}
+                                {/* <td>{student.checkOut} </td> */}
                                 <td className="text-right">
                                     <button
                                         onClick={() => handleEdit(student.id)}
